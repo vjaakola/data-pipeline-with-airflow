@@ -16,4 +16,4 @@ The project template package contains three major components for the project:
 - `load_fact.py`: Defines LoadFactOperator to load fact table from staging tables.
 - `stage_redshift.py`: Defines StageToRedshiftOperator to copy JSON data from S3 to staging tables in the Redshift via copy command.
 3. A helper class for the SQL transformations
-- - `sql_queries.py`: Contains SQL queries for the ETL pipeline.
+- `sql_queries.py`: Contains SQL queries for the ETL pipeline.
