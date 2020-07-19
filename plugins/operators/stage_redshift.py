@@ -60,12 +60,14 @@ class StageToRedshiftOperator(BaseOperator):
             self.json_path
             
         )
+        self.log.info(f'Executing: copy from S3 {s3_path} to Redshift')
         redshift.run(formatted_sql)
+        self.log.info('Copy to Redshift is done')
             
                       
-        #self.log.info(f'Executing: copy from S3 {s3_path} to Redshift')
         
-        #self.log.info('Copy to Redshift is done')
+        
+        
 
 
 
